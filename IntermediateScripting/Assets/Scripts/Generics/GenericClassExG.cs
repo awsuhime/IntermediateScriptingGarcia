@@ -2,17 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameStatic : MonoBehaviour
+public class GenericClassExG : MonoBehaviour
 {
+    
     // Start is called before the first frame update
     void Start()
     {
-        EnemyStatic enemy1 = new EnemyStatic();
-        EnemyStatic enemy2 = new EnemyStatic();
-        EnemyStatic enemy3 = new EnemyStatic();
+        GenericClassG<int> myClass = new GenericClassG<int>();
 
-        int x = EnemyStatic.enemyCount;
-        
+        myClass.UpdateItem(0);
     }
 
     // Update is called once per frame

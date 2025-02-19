@@ -2,16 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameStatic : MonoBehaviour
+public class SomeClassG : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        EnemyStatic enemy1 = new EnemyStatic();
-        EnemyStatic enemy2 = new EnemyStatic();
-        EnemyStatic enemy3 = new EnemyStatic();
-
-        int x = EnemyStatic.enemyCount;
         
     }
 
@@ -19,5 +14,10 @@ public class GameStatic : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public T GenericMethod<T>(T param)
+    {
+        return param;
     }
 }
